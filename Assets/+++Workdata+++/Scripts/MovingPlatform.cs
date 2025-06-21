@@ -31,6 +31,7 @@ public class MovingPlatform : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("collision enter");
         if (transform.CompareTag("Platform"))
         {
             collision.transform.SetParent(transform);
@@ -39,6 +40,7 @@ public class MovingPlatform : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        Debug.Log("collision exit");
         if (transform.CompareTag("Platform"))
         {
             collision.transform.SetParent(null);
