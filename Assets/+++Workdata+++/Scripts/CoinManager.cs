@@ -6,6 +6,7 @@ public class CoinManager : MonoBehaviour
 
     public int coinCounter;
     public UIManager uIManager;
+    
     #endregion
     private void OnTriggerEnter2D(Collider2D other)
     {

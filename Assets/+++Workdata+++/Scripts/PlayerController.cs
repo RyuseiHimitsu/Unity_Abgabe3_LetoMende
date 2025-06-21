@@ -15,12 +15,13 @@ public class PlayerController : MonoBehaviour
     public UIManager uiManager;
     public int jumpsRemaining = 1;
     [SerializeField] GameObject groundCheck;
+    public float ScaleValue = 3f;
+    
     #endregion
 
 
     void Update()
     {
-        
         GroundCheck();
         
         horizontal = Input.GetAxis("Horizontal");
@@ -53,5 +54,4 @@ public class PlayerController : MonoBehaviour
             jumpsRemaining = 1;
         }
     }
-    
 }
