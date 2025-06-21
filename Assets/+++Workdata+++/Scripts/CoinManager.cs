@@ -4,8 +4,11 @@ public class CoinManager : MonoBehaviour
 {
     #region defining
 
-    public int coinCounter;
+    public float coinCounter;
     public UIManager uIManager;
+    public Timer timer;
+    public float Highscore;
+    public float TimeScore;
     
     #endregion
     private void OnTriggerEnter2D(Collider2D other)
@@ -27,6 +30,14 @@ public class CoinManager : MonoBehaviour
             Destroy(gameObject);
             uIManager.OpenLostPanel();
         }
+    }
+
+    private void GetHighscore()
+    {
+        TimeScore = timer.elapsedTime * 100;
+        coinCounter = coinCounter * 10;
+        Highscore = coinCounter + TimeScore;
+        Debug.Log(Highscore);
     }
 
 }
