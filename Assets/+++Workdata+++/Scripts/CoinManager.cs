@@ -10,14 +10,18 @@ public class CoinManager : MonoBehaviour
     #endregion
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Entered a trigger" + other.name);
-
+        //if collision object is coin/diamond, add 1 or 5 to the score count
         if (other.CompareTag("Coin"))
         {
             Destroy(other.gameObject);
             coinCounter++;
         }
-
+        if (other.CompareTag("Diamond"))
+        {
+            Destroy(other.gameObject);
+            coinCounter = coinCounter + 5;
+        }
+        //if collision object doesDamage, show lost Panel and destroy player
         if (other.CompareTag("DoesDamage"))
         {
             Destroy(gameObject);

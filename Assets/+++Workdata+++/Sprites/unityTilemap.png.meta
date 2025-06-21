@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 00d437e44841a094786d8ed4aad17dad
+guid: 6e1616c84bab0d24a933f64adbcd34ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9182157284707403512
-    second: Untitled-1_0
+      213: 3771336537829642215
+    second: unityTilemap_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled-1_0
+      name: unityTilemap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f600cab6639d6f70800000000000000
-      internalID: 9182157284707403512
+      spriteID: 7ef89c9899a765430800000000000000
+      internalID: 3771336537829642215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled-1_1
+      name: unityTilemap_1
       rect:
         serializedVersion: 2
         x: 16
@@ -163,14 +163,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a78ccd599f036d40927ec566062b7b9
-      internalID: -1246572050
+      spriteID: 5c56c523da1aa50408983f3a9ccfaca2
+      internalID: -119148219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled-1_2
+      name: unityTilemap_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8bbc72c41fc0a43b03dc241d4a6919
+      internalID: 1782684579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unityTilemap_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad9ddf39b33d914fb8f3a472b4f37a9
+      internalID: 1962446454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unityTilemap_4
       rect:
         serializedVersion: 2
         x: 0
@@ -185,8 +229,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b13ff7f8ab9a0b94192460dfe40ebbe5
-      internalID: -1616461506
+      spriteID: 8d65a5de4257ce44c848f29855c44059
+      internalID: 1499525749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unityTilemap_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353766e2f8bc82944a11a917ef7c5539
+      internalID: -844549966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unityTilemap_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b348863aecf14494e8cf7b708ce43812
+      internalID: 1916776479
       vertices: []
       indices: 
       edges: []
@@ -195,7 +283,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 14490099af8f0844286e41682466890d
+    spriteID: 242c5c8aeea27904a8e091723c9fbb69
     internalID: 0
     vertices: []
     indices: 
@@ -205,9 +293,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled-1_0: 9182157284707403512
-      Untitled-1_1: -1246572050
-      Untitled-1_2: -1616461506
+      unityTilemap_0: 3771336537829642215
+      unityTilemap_1: -119148219
+      unityTilemap_2: 1782684579
+      unityTilemap_3: 1962446454
+      unityTilemap_4: 1499525749
+      unityTilemap_5: -844549966
+      unityTilemap_6: 1916776479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

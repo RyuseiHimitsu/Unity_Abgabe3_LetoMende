@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     public UIManager uiManager;
     public int jumpsRemaining = 1;
     [SerializeField] GameObject groundCheck;
-    public float ScaleValue = 3f;
     
     #endregion
 
@@ -23,7 +22,20 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         GroundCheck();
+        Movement();
         
+    }
+
+    void GroundCheck()
+    { //checks if the GroundCheck object is touching the ground and resets the jump counter if it does
+        if (Physics2D.OverlapCircle(groundCheck.transform.position, 0.2f, LayerMask.GetMask("Ground")))
+        {
+            jumpsRemaining = 1;
+        }
+    }
+
+    void Movement()
+    {
         horizontal = Input.GetAxis("Horizontal");
         
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
@@ -44,14 +56,6 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, jumpForce);
             jumpsRemaining--;
-        }
-    }
-
-    void GroundCheck()
-    {
-        if (Physics2D.OverlapCircle(groundCheck.transform.position, 0.2f, LayerMask.GetMask("Ground")))
-        {
-            jumpsRemaining = 1;
         }
     }
 }
