@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public GameObject LevelSelectPanel;
     public GameObject LostPanel;
     public GameObject WinPanel;
+    public Timer timer;
 
     public bool canMove;
     #endregion
@@ -41,12 +42,14 @@ public class UIManager : MonoBehaviour
     {
         LostPanel.SetActive(true);
         canMove = false;
+        timer.gamePaused = true;
     }
 
     public void OpenWinPanel()
     {
         WinPanel.SetActive(true);
         canMove = false;
+        timer.gamePaused = true;
     }
 
     public void OpenLevelSelectPanel()

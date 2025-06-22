@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
     {
         GroundCheck();
         Movement();
-        
+        Flip();
+
     }
 
     void GroundCheck()
@@ -56,6 +57,17 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, jumpForce);
             jumpsRemaining--;
+        }
+    }
+
+    private void Flip()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
     }
 }
