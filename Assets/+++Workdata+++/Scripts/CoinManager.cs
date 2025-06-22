@@ -23,6 +23,7 @@ public class CoinManager : MonoBehaviour
         {
             Destroy(other.gameObject);
             coinCounter = coinCounter + 5;
+            GetHighscore();
         }
         //if collision object doesDamage, show lost Panel and destroy player
         if (other.CompareTag("DoesDamage"))
@@ -34,7 +35,7 @@ public class CoinManager : MonoBehaviour
 
     private void GetHighscore()
     {
-        TimeScore = timer.elapsedTime * 100;
+        TimeScore = timer.elapsedTime * 10;
         coinCounter = coinCounter * 10;
         Highscore = coinCounter + TimeScore;
         Debug.Log(Highscore);
